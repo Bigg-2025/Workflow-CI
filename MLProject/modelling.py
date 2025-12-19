@@ -5,8 +5,9 @@ import mlflow.sklearn
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-train_df = pd.read_csv("data/train.csv")
-test_df = pd.read_csv("data/test.csv")
+train_df = pd.read_csv("powerconsumption_preprocessing/train.csv")
+test_df  = pd.read_csv("powerconsumption_preprocessing/test.csv")
+
 
 
 target = "PowerConsumption_Mean"
