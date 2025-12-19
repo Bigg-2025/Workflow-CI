@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install mlflow==2.19.0 pandas scikit-learn
+          pip install mlflow==2.19.0 pandas scikit-learn==1.5.2
 
       - name: Run MLflow Project
         run: mlflow run ./MLProject --env-manager=local
